@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container .nav
+{
+    padding: 10px;
+    /* position: relative; */
+ }
+
+.nav ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+ }
+
+.nav ul li{
+ list-style: none; 
+}
+
+.nav li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav div img
+{
+    height: 20px;
+}
+
+/* .container .banner
+{
+    position: relative;
+} */
+
+.container .banner img
+{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.container .banner .text
+{
+
+    padding: 30px;
+    background-color: rgb(245, 109, 109);
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -320px;
+    opacity: 0.7;
+
+}
+
+.banner .text h2{
+    margin: 10px 0px 0px 0px ;
+    color: white;
+   font-weight: bold;
+}
+
+
+.banner .text p{
+    margin: 10px 0px 0px 0px ;
+    color: white;
+}
+
+.container .border
+{
+    /* position: absolute; */
+    margin-top: -4px;
+    width: 100%;
+    height: 74px;
+    background-image: linear-gradient(to  right, #f38dd1, #f3b96d,#ebd489);
+}
+
+.order
+{
+    position: absolute;
+    margin-top: 3px;
+    background-image: linear-gradient(to  right, #f38dd1, #f3b96d,#ebd489);
+    height: 700px;
+    width: 100%;
+}
+
+.order h2{
+    margin-top: 20px;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+
+.order .card
+{
+    background-color: white;
+    width: 20%;
+    float: left;
+    margin: 70px 0px 0px  130px;
+    height: 350px;    
+    border-radius:0px 80px  ;
+    position: relative;
+    padding: 20px;
+}
+
+.order .card img
+{
+    width: 100%;
+    border-radius:0px 50px 0px 0px ;
+}
+
+.order .card  h3 ,p{
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.order input
+{
+    margin: 90px 0px 0px 600px;
+    width: 15%;
+    height: 40px;
+    background-color: rgb(231, 163, 173);
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+  outline: none;
+
+}
+
+@media only screen and (max-width: 540px){
+    .nav ul{
+    display: block;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    text-align: center;
+    color: white;
+    line-height:30px;
+    }
+    .nav ul li{
+    display: block;
+    color: white;
+    }
+    
+    .nav ul li a{
+    color: white;
+    }
+    
+    .container .banner img{
+    width: 100%;
+    height: 100vh;
+    }
+    
+    .card{
+    width: 10%;
+    }
+    
+    }
+    
+    @media only screen and (max-width: 440px){
+    .card
+    {
+        width:5%;
+    }
+    
+    }
